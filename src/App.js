@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Header from "./components/header/Header";
+import Search from "./components/search/Search";
+import FilterContainer from "./components/filter/FilterContainer";
+import Table from "./components/table/Table";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <>
+      <Header />
+      <Search />
+      <FilterContainer />
+      <Table />
+    </>
+  );
+};
 
-export default App
+export default App;
