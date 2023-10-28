@@ -3,7 +3,7 @@ import styles from "./table.module.css";
 
 // directly destructure transactions
 const Table = ({ transactions, filter }) => {
-  // !show records based category
+  // !show records based on category
   if (filter) {
     transactions = transactions.filter((transaction) => {
       return transaction.category === filter;

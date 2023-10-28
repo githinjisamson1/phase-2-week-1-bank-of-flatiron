@@ -45,6 +45,10 @@ const App = () => {
     fetchTransactions();
   }, []);
 
+  // useEffect(() => {
+  //   postTransaction();
+  // }, [transactions]);
+
   // signify fetching
   if (isLoading) {
     return <h1>Loading...</h1>;
@@ -72,6 +76,15 @@ const App = () => {
         id: transactions.length + 1,
       },
     ]);
+
+    // POST transaction
+    fetch("http://localhost:8000/transactions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
     // clear form values upon form submission
     setFormData({
