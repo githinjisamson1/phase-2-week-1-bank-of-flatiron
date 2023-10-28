@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./addNewTransaction.module.css";
 
-const AddNewTransaction = () => {
+// directly destructure props
+const AddNewTransaction = ({ formData, handleChange, handleFormSubmit }) => {
   return (
     <>
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={handleFormSubmit}>
         <div className={styles.formControlsContainer}>
           <div className={styles.formControl}>
             <label htmlFor="date">Date: </label>
-            <input className={styles.input} type="date" id="date" name="date" />
+            <input
+              value={formData.date}
+              onChange={handleChange}
+              type="date"
+              id="date"
+              name="date"
+            />
           </div>
 
           <div className={styles.formControl}>
             <input
+              value={formData.description}
+              onChange={handleChange}
               type="text"
               id="description"
               name="description"
@@ -22,6 +31,8 @@ const AddNewTransaction = () => {
 
           <div className={styles.formControl}>
             <input
+              value={formData.category}
+              onChange={handleChange}
               type="text"
               id="category"
               name="category"
@@ -30,7 +41,14 @@ const AddNewTransaction = () => {
           </div>
 
           <div className={styles.formControl}>
-            <input type="number" id="date" name="date" placeholder="Amount" />
+            <input
+              value={formData.amount}
+              onChange={handleChange}
+              type="number"
+              id="amount"
+              name="amount"
+              placeholder="Amount"
+            />
           </div>
         </div>
 
