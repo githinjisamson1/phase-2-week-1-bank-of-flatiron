@@ -4,11 +4,11 @@ import styles from "./addNewTransaction.module.css";
 const AddNewTransaction = () => {
   return (
     <>
-      <form className={styles.form} action="">
+      <form className={styles.form}>
         <div className={styles.formControlsContainer}>
           <div className={styles.formControl}>
             <label htmlFor="date">Date: </label>
-            <input className={styles.input} type="date" id="date" name="date" value="" />
+            <input className={styles.input} type="date" id="date" name="date" />
           </div>
 
           <div className={styles.formControl}>
@@ -16,7 +16,6 @@ const AddNewTransaction = () => {
               type="text"
               id="description"
               name="description"
-              value=""
               placeholder="Description"
             />
           </div>
@@ -26,23 +25,16 @@ const AddNewTransaction = () => {
               type="text"
               id="category"
               name="category"
-              value=""
               placeholder="Category"
             />
           </div>
 
           <div className={styles.formControl}>
-            <input
-              type="number"
-              id="date"
-              name="date"
-              value=""
-              placeholder="Amount"
-            />
+            <input type="number" id="date" name="date" placeholder="Amount" />
           </div>
         </div>
 
-        <input type="submit" value="Add New Transaction"/>
+        <input type="submit" value="Add Transaction" />
       </form>
     </>
   );

@@ -2,13 +2,11 @@
   --white: #fff;
   --red: #e63946;
 }
-* {
-  font-family: "Poppins", sans-serif;
-}
+
 .header {
-  background-color: var(--red);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--red);
   color: var(--white);
 }
