@@ -1,0 +1,18 @@
+:root {
+  --white: #fff;
+  --red: #e63946;
+  --border-radius: 5px;
+  --padding: 1rem;
+}
+* {
+  font-family: "Dancing Script", cursive;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  padding: var(--padding);
+}
