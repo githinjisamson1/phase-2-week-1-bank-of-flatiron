@@ -6,12 +6,12 @@ import AddNewTransaction from "./components/addNewTransaction/AddNewTransaction"
 
 const App = () => {
   return (
-    <>
+    <div className="App">
       <Header />
       <Search />
       <AddNewTransaction />
       <Table />
-    </>
+    </div>
   );
 };
 
