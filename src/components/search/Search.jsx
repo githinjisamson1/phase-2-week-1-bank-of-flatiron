@@ -10,7 +10,7 @@ const Search = ({ filter, handleFilter }) => {
         onChange={handleFilter}
         className={styles.search}
         type="text"
-        placeholder="Search Your Recent Transactions"
+        placeholder="Search Your Recent Transactions (filter by category)"
       />
     </>
   );

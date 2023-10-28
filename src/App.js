@@ -32,7 +32,7 @@ const App = () => {
         // user-experience/show page after 3 sec
         setTimeout(() => {
           setIsLoading(false);
-        }, 3000);
+        }, 1500);
       })
       .catch((err) => {
         // fetch error
@@ -86,12 +86,13 @@ const App = () => {
       body: JSON.stringify(formData),
     });
 
-    // clear form values upon form submission
-    setFormData({
-      date: "",
-      description: "",
-      category: "",
-    });
+    // TODO: clear form values upon form submission
+    // !!will change controlled input
+    // setFormData({
+    //   date: "",
+    //   description: "",
+    //   category: "",
+    // });
   };
 
   // !handle searching recentTransactions

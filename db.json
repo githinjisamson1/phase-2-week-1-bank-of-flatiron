@@ -99,25 +99,18 @@
       "id": 14
     },
     {
-      "date": "2023-10-13",
-      "description": "new",
-      "category": "new",
-      "amount": "12345",
+      "date": "2023-10-28",
+      "description": "testDesc",
+      "category": "testCat",
+      "amount": "1234",
       "id": 15
     },
     {
       "date": "2023-10-28",
-      "description": "test",
-      "category": "test",
-      "amount": "1234",
+      "description": "newDesc",
+      "category": "newCat",
+      "amount": "4321",
       "id": 16
-    },
-    {
-      "date": "2023-10-28",
-      "description": "test",
-      "category": "test",
-      "amount": "1234",
-      "id": 17
     }
   ]
 }
