@@ -92,6 +92,7 @@ const App = () => {
       date: "",
       description: "",
       category: "",
+      amount: "",
     });
   };
 
