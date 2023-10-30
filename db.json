@@ -111,6 +111,13 @@
       "category": "newCat",
       "amount": "4321",
       "id": 16
+    },
+    {
+      "date": "2023-10-28",
+      "description": "addNew",
+      "category": "addNew",
+      "amount": "321",
+      "id": 17
     }
   ]
 }
