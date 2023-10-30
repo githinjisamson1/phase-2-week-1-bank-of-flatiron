@@ -99,24 +99,24 @@
       "id": 14
     },
     {
-      "date": "2023-10-28",
-      "description": "testDesc",
-      "category": "testCat",
-      "amount": "1234",
+      "date": "2023-10-30",
+      "description": "test1",
+      "category": "test1",
+      "amount": "100",
       "id": 15
     },
     {
-      "date": "2023-10-28",
+      "date": "2023-10-30",
       "description": "newDesc",
       "category": "newCat",
-      "amount": "4321",
+      "amount": "200",
       "id": 16
     },
     {
-      "date": "2023-10-28",
-      "description": "addNew",
-      "category": "addNew",
-      "amount": "321",
+      "date": "2023-10-30",
+      "description": "finalTest",
+      "category": "finalTest",
+      "amount": "300",
       "id": 17
     }
   ]
