@@ -69,22 +69,31 @@ const App = () => {
     e.preventDefault();
 
     // addNewTransation/with unique id
-    setTransactions([
-      ...transactions,
-      {
-        ...formData,
-        id: transactions.length + 1,
-      },
-    ]);
+    // setTransactions([
+    //   ...transactions,
+    //   {
+    //     ...formData,
+    //     id: transactions.length + 1,
+    //   },
+    // ]);
 
     // POST transaction
     fetch("http://localhost:8000/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Accept: "application/json",
       },
       body: JSON.stringify(formData),
-    });
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setTransactions([...transactions, data]);
+      })
+      .catch();
 
     // TODO: clear form values upon form submission
     // !!will change controlled input
