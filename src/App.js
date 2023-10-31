@@ -68,16 +68,7 @@ const App = () => {
     // prevent default refresh behavior
     e.preventDefault();
 
-    // addNewTransation/with unique id
-    // setTransactions([
-    //   ...transactions,
-    //   {
-    //     ...formData,
-    //     id: transactions.length + 1,
-    //   },
-    // ]);
-
-    // POST transaction
+    // POST transaction/add Item to transactions
     fetch("http://localhost:8000/transactions", {
       method: "POST",
       headers: {
